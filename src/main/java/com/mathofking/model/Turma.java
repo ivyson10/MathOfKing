@@ -2,6 +2,7 @@ package com.mathofking.model;
 
 import java.util.List;
 
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -10,6 +11,7 @@ public class Turma extends AbstractEntity {
 	private String nome;
 	private String codigo;
 	private Professor professor;
+	@DBRef
 	private List<Turma> questoes;
 
 	public String getNome() {

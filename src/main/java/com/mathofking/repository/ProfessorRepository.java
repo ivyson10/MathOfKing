@@ -7,7 +7,5 @@ import com.mathofking.model.Professor;
 
 @Repository
 public interface ProfessorRepository extends ReactiveMongoRepository<Professor, String>{
-
-	
 	
 }

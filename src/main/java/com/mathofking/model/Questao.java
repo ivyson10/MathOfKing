@@ -2,6 +2,7 @@ package com.mathofking.model;
 
 import java.util.List;
 
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -9,6 +10,7 @@ public class Questao extends AbstractEntity{
 	
 	private String problema;
 	private String resposta;
+	@DBRef
 	private List<Turma> turmas;
 	
 	public String getProblema() {
