@@ -39,7 +39,6 @@ public class AlunoController {
 	@PatchMapping(value="/alunos/edit/{id}")
 	public Mono<Aluno> editarAluno(@PathVariable String id, @RequestBody Aluno aluno){
 		return alunoRepository.save(aluno);
-		
 	}
 	
 	@DeleteMapping(value="/alunos/delete/{id}")

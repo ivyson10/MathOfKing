@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: MathOfKing
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: leonardo
+Implementation-Vendor-Id: com.mathofking
+Build-Jdk: 1.8.0_191
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/MathOfKing
+Created-By: Maven Integration for Eclipse
+

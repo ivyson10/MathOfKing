@@ -1,5 +1,7 @@
 package com.mathofking.model;
 
+import java.util.List;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -7,6 +9,7 @@ public class Questao extends AbstractEntity{
 	
 	private String problema;
 	private String resposta;
+	private List<Turma> turmas;
 	
 	public String getProblema() {
 		return problema;
@@ -20,5 +23,13 @@ public class Questao extends AbstractEntity{
 	public void setResposta(String resposta) {
 		this.resposta = resposta;
 	}
+	public List<Turma> getTurmas() {
+		return turmas;
+	}
+	public void setTurmas(List<Turma> turmas) {
+		this.turmas = turmas;
+	}
+	
+	
 
 }
