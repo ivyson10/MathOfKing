@@ -8,8 +8,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Questao extends AbstractEntity{
 	
+	public Questao(String problema, String resposta) {
+		super();
+		this.problema = problema;
+		this.resposta = resposta;
+	}
 	private String problema;
 	private String resposta;
+	
 	@DBRef
 	private List<Turma> turmas;
 	
