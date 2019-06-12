@@ -5,27 +5,33 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Professor extends AbstractEntity {
 
-	public Professor(String nome, String senha) {
+	private String name;
+	private String password;
+
+	public Professor(String name, String password) {
 		super();
-		this.nome = nome;
-		this.senha = senha;
+		this.name = name;
+		this.password = password;
 		
 	}
-	private String nome;
-	private String senha;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getSenha() {
-		return senha;
-	}
-	public void setSenha(String senha) {
-		this.senha = senha;
+	
 		
-	}
 	
 }

@@ -3,9 +3,9 @@ package com.mathofking.repository;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 
-import com.mathofking.model.Aluno;
+import com.mathofking.model.Problem;
 
 @Repository
-public interface AlunoRepository extends ReactiveMongoRepository<Aluno, String>{
+public interface ProblemRepository extends ReactiveMongoRepository<Problem, String> {
 
 }
